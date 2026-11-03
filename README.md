@@ -1,60 +1,88 @@
-# CakeBloom – Custom Cake E-Commerce Platform
+# 🍰 CakeWorld – Online Cake Ordering Website
 
-A responsive React + Vite storefront for a custom cake business in Sri Lanka.
+CakeWorld is a modern and user-friendly cake ordering web application designed to make discovering, customizing, and ordering cakes simple and convenient. Customers can explore a variety of cakes, add products to their shopping cart, and place orders online.
 
-## Run locally
-1. Install **Node.js LTS**.
-2. Extract this ZIP and open the `cakebloom` folder in VS Code.
-3. Open Terminal → run:
-   ```bash
-   npm install
-   npm run dev
-   ```
-4. Open the local URL shown by Vite (usually `http://localhost:5173`).
+The application also includes an admin dashboard for managing customer orders and monitoring order statuses.
 
-## Included demo features
-- Responsive storefront, product catalogue, category filters and search
-- Product quick view and shopping basket with quantity controls
-- Checkout form with Cash on Delivery
-- Custom cake request form (flavour, size, occasion, cake text, date and reference image URL)
-- Customer inquiry form
-- Demo sign-in and admin dashboard
-- Order status management
-- Browser localStorage persistence
+## ✨ Features
 
-## Demo admin
-- Email: `admin@cakebloom.lk`
-- Password: any password with at least 4 characters
+### 🛍️ Customer Features
+- Browse a collection of cakes.
+- Search cakes by name and description.
+- Filter products by categories.
+- View individual cake details.
+- Add cakes to the shopping cart.
+- Update product quantities and manage the cart.
+- Secure user registration and login.
+- Place cake orders online.
+- View personal order history.
+- Submit custom cake requests.
+- Send customer inquiries.
 
-Use any other email to try the customer sign-in flow.
+### ⚙️ Admin Features
+- Secure admin authentication.
+- View all customer orders.
+- View detailed order information.
+- Update order statuses.
+- Monitor customer order details.
 
-## Important: demo mode vs production
-This starter is immediately viewable without connecting a database. Orders, requests, inquiries and the demo account are stored in the current browser using `localStorage`. This is **not** secure production authentication or a shared database. The admin demo is only a front-end demonstration.
+## 🛠️ Technologies Used
 
-## Optional Firebase setup
-1. Create a Firebase project at the Firebase Console.
-2. Add a Web App and enable **Authentication** (Email/Password) and **Cloud Firestore**.
-3. Copy `.env.example` to `.env`.
-4. Add the Firebase web app values to the matching `VITE_FIREBASE_*` variables.
-5. Restart the Vite server.
+**Frontend**
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
-`src/firebase.js` initializes Firebase when the environment values are present. The UI currently remains in local demo mode; connect Firestore reads/writes and Firebase Auth before deploying for real customers. Add Firestore security rules and admin custom claims/role validation before production.
+**Backend & Database Services**
+- Firebase Authentication
+- Firebase Cloud Firestore
 
-## Email notifications
-EmailJS variables are included in `.env.example` as a future integration point. Create and configure EmailJS templates before enabling email sending. Never put private service credentials in frontend code.
+**Development Tools**
+- Visual Studio Code
+- Git
+- GitHub
+- Vercel
 
-## Main structure
-```
-src/
-  App.jsx       Main storefront, forms, cart and demo admin
-  data.js       Sample cake catalogue
-  firebase.js   Optional Firebase initialization
-  main.jsx      React entry point
-  styles.css    Responsive styling
-```
+## 🔐 Authentication & Database
 
-## Customization
-- Change business name and page title in `index.html` and `src/App.jsx`.
-- Edit sample products in `src/data.js`.
-- Replace sample image URLs with your own licensed cake photographs.
-- Update contact email, delivery policy, prices and testimonials before publishing.
+- Firebase Authentication is used for customer registration and login.
+- Cloud Firestore stores customer orders.
+- Customers can access their own order information.
+- Admin users can view and manage customer orders through the dashboard.
+- Firestore Security Rules help control access to order data.
+
+## 📸 Application Highlights
+
+- Modern and responsive user interface.
+- Elegant cake product collection.
+- Interactive shopping cart.
+- Customer account dashboard.
+- Admin order management dashboard.
+- Online checkout experience.
+
+## 🚀 Getting Started
+
+
+## 🌐 Deployment
+
+The application is prepared for deployment using Vercel.
+
+Add the required Firebase environment variables in the Vercel project settings before deploying.
+
+## 🎯 Project Purpose
+
+This project was developed as a personal portfolio project to improve practical skills in frontend development, Firebase integration, authentication, database operations, and building full-stack-style web applications.
+
+## 👩‍💻 Developer
+
+**Shachini Madara**
+
+- GitHub: [Smadara](https://github.com/Smadara)
+- LinkedIn: [Shachini Madara](https://linkedin.com/in/shachini-madara)
+- Portfolio: [My Portfolio](https://smadara.github.io/My-Portfolio/)
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository!
